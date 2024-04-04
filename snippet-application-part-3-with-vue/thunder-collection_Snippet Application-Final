@@ -1,0 +1,348 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Snippet Application",
+    "dateExported": "2023-12-07T05:57:07.947Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "4b18c9da-0aee-469b-994b-6e46df979450",
+            "name": "users",
+            "containerId": "",
+            "created": "2023-10-07T21:00:34.095Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "7464a052-8bbe-4ef5-a339-a3eba3d25342",
+            "name": "Snippets",
+            "containerId": "",
+            "created": "2023-10-08T02:17:26.032Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "793c480f-561f-4820-94d5-b12822cda9a8",
+            "name": "Bookmarks",
+            "containerId": "",
+            "created": "2023-10-08T05:28:01.510Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "80259036-a619-43fd-872e-8efa6eaaf1ce",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "4b18c9da-0aee-469b-994b-6e46df979450",
+            "name": "Retrieve user information by ID",
+            "url": "localhost:8080/users/6570f4542eaadca41e95e50d?snippets=true&bookmarks=true",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-10-07T21:09:47.614Z",
+            "modified": "2023-12-07T04:51:02.664Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "snippets",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "bookmarks",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c8c2b4a5-9309-4991-b90f-b1641c5c0b73",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "4b18c9da-0aee-469b-994b-6e46df979450",
+            "name": "Update user information by ID",
+            "url": "localhost:8080/users/6570f4542eaadca41e95e50d",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2023-10-08T02:00:07.756Z",
+            "modified": "2023-12-07T04:53:56.610Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                },
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NmMwYmVjZTlmOGE4ODE2OTZiMzU5ZSIsInVzZXJuYW1lIjoiY29kZXJnbyIsImlhdCI6MTcwMTU4MjQ3MSwiZXhwIjoxNzAxNjY4ODcxfQ.wDdiLOonjMUKcu5u5KIc7qdBMqBdbYGirD8RM--Pm5I"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "      {\n       \n        \"years_experience\": 11\n      }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzBmNDU0MmVhYWRjYTQxZTk1ZTUwZCIsInVzZXJuYW1lIjoiaGFybGV5X3F1aW5uIiwiaWF0IjoxNzAxOTAxNTg1LCJleHAiOjE3MDE5ODc5ODV9.4P4lv69BQesD4z8OmKzaYfudFDhb0CkjMGaQ0XSEqnc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "0d893b91-29cf-4d83-8172-099c4b353fc8",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "4b18c9da-0aee-469b-994b-6e46df979450",
+            "name": "Add a new user",
+            "url": "localhost:8080/users/register",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-10-08T02:03:14.624Z",
+            "modified": "2023-12-06T23:08:32.271Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "      {\n        \n        \"username\": \"Ken\",\n      \"years_experience\": 3,\n  \"programming_languages\": [\n    \"GO\"\n  ],\n        \"password\":\"12345\"\n      }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6a7e972e-ef38-41f7-987c-72e27c6ae322",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "793c480f-561f-4820-94d5-b12822cda9a8",
+            "name": "Add a new bookmark",
+            "url": "localhost:8080/bookmarks",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-10-08T05:28:32.609Z",
+            "modified": "2023-12-06T23:13:54.394Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n        \"snippet_id\": \"6570f53f2eaadca41e95e510\",\n        \"user_id\": \"6570fef02eaadca41e95e527\"\n    }",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzBmNDU0MmVhYWRjYTQxZTk1ZTUwZCIsInVzZXJuYW1lIjoiaGFybGV5X3F1aW5uIiwiaWF0IjoxNzAxOTAxNTg1LCJleHAiOjE3MDE5ODc5ODV9.4P4lv69BQesD4z8OmKzaYfudFDhb0CkjMGaQ0XSEqnc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d87c3ec1-1bbb-436b-80af-0773e6b36b12",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "793c480f-561f-4820-94d5-b12822cda9a8",
+            "name": "Delete a bookmark by id",
+            "url": "localhost:8080/bookmarks/65513fa8f36a30a192edda03",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2023-10-08T05:48:10.342Z",
+            "modified": "2023-12-07T04:56:16.572Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzBmNDU0MmVhYWRjYTQxZTk1ZTUwZCIsInVzZXJuYW1lIjoiaGFybGV5X3F1aW5uIiwiaWF0IjoxNzAxOTAxNTg1LCJleHAiOjE3MDE5ODc5ODV9.4P4lv69BQesD4z8OmKzaYfudFDhb0CkjMGaQ0XSEqnc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "12bf8889-ca3b-4fa1-8369-5713dc58a4ba",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "7464a052-8bbe-4ef5-a339-a3eba3d25342",
+            "name": "Retrieve a list of all snippets",
+            "url": "localhost:8080/snippets",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-10-08T20:10:42.242Z",
+            "modified": "2023-11-12T20:59:15.113Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "language",
+                    "value": "python",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "6a8d4d3a-4a55-468c-b88a-54e8f766bfd1",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "7464a052-8bbe-4ef5-a339-a3eba3d25342",
+            "name": "Retrieve by id with  query parameter",
+            "url": "localhost:8080/snippets/6570ff352eaadca41e95e529?bookmarkCount=true&bookmarks=true",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2023-10-08T20:18:13.409Z",
+            "modified": "2023-12-07T04:49:17.192Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [
+                {
+                    "name": "bookmarkCount",
+                    "value": "true",
+                    "isPath": false
+                },
+                {
+                    "name": "bookmarks",
+                    "value": "true",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "1d9960c9-6e0a-4467-a4cf-3cfd85714553",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "7464a052-8bbe-4ef5-a339-a3eba3d25342",
+            "name": "Add a new snippet",
+            "url": "localhost:8080/snippets",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2023-10-08T20:26:30.807Z",
+            "modified": "2023-12-06T23:24:20.080Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n   \"title\": \"sum numbers between 1 and a given number\",\n  \"code_snippet\": \"const sumNumbers = n => (n * (n + 1)) / 2;\\nsumNumbers(5);\",\n  \"programming_language\": \"JavaScript\",\n      \"user_id\": \"6570f4542eaadca41e95e50d\"\n \n}\n",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzBmNDU0MmVhYWRjYTQxZTk1ZTUwZCIsInVzZXJuYW1lIjoiaGFybGV5X3F1aW5uIiwiaWF0IjoxNzAxOTAxNTg1LCJleHAiOjE3MDE5ODc5ODV9.4P4lv69BQesD4z8OmKzaYfudFDhb0CkjMGaQ0XSEqnc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "1f54e22a-0233-4c83-8f86-cf598578df88",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "7464a052-8bbe-4ef5-a339-a3eba3d25342",
+            "name": "Delete a snippet by id",
+            "url": "localhost:8080/snippets/657102a32eaadca41e95e53e",
+            "method": "DELETE",
+            "sortNum": 190000,
+            "created": "2023-10-08T20:36:58.240Z",
+            "modified": "2023-12-06T23:25:23.851Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NzBmNDU0MmVhYWRjYTQxZTk1ZTUwZCIsInVzZXJuYW1lIjoiaGFybGV5X3F1aW5uIiwiaWF0IjoxNzAxOTAxNTg1LCJleHAiOjE3MDE5ODc5ODV9.4P4lv69BQesD4z8OmKzaYfudFDhb0CkjMGaQ0XSEqnc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "90eebf8e-0544-4b2d-9670-150d7fb570c0",
+            "colId": "4a768692-b7ea-4c3d-a340-df74911ddb62",
+            "containerId": "4b18c9da-0aee-469b-994b-6e46df979450",
+            "name": "login user",
+            "url": "localhost:8080/users/login",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2023-12-03T05:44:18.559Z",
+            "modified": "2023-12-07T04:54:30.574Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"harley_quinn\",\n  \"password\":\"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
